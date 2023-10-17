@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aleksandr Murashov | Frontend Developer</title>
+        <meta name="color-scheme" content="dark light" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicons/favicon-16x16.png"
+        />
+        <link
+            rel="mask-icon"
+            href="./assets/favicons/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta
+            name="msapplication-config"
+            content="/assets/favicons/browserconfig.xml"
+        />
+        <meta name="theme-color" content="#f2d544" />
+        <meta name="description" content="Aleksandr Murashov | Frontend Developer" />
+        <meta
+            name="description"
+            content="Hello! I'm a Frontend Developer based in Saint Petersburg. Here you can learn a little about me and check out some of my work!"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://www.aleksandr-murashov.netlify.app"
+        />
+        <meta property="og:title" content="Aleksandr Murashov | Frontend Developer" />
+        <meta
+            property="og:description"
+            content="Hello! I'm a Frontend Developer based in Saint Petersburg. Here you can learn a little about me and check out some of my work!"
+        />
+        <meta property="og:image" content="/assets/share.png" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+            property="twitter:url"
+            content="https://www.aleksandr-murashov.netlify.app"
+        />
+        <meta property="twitter:title" content="Aleksandr Murashov | Frontend Developer" />
+        <meta
+            property="twitter:description"
+            content="Hello! I'm a Frontend Developer based in Saint Petersburg. Here you can learn a little about me and check out some of my work!"
+        />
+        <meta property="twitter:image" content="/assets/share.png" />
+    </head>
+    <body>
+
+        <nav>
+            <div class="container">
+                <div class="nav">
+                    <img
+                        src="assets/logo.svg"
+                        alt="logo"
+                        width="45"
+                        height="43"
+                    />
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#about-me" class="btn btn--nav"
+                                >About me</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="btn btn--nav"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#experience" class="btn btn--nav"
+                                >Experience</a
+                            >
+                        </li>
+                        <li class="nav-hire-me">
+                            <a href="#hire-me" class="btn btn--raised"
+                                >Hire me</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="toggle-theme" aria-label="Toggle dark theme">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    fill="var(--light-icon)"
+                >
+                    <rect fill="none" height="24" width="24" />
+                    <path
+                        d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"
+                    />
+                </svg>
+            </button>
+        </nav>
+        <main>
+            <section
+                id="intro"
+                class="layout-section"
+                aria-describedby="intro-h1 intro-h2"
+            >
+                <div class="container">
+                    <h1 id="intro-h1" class="title--xl">Aleksandr Murashov</h1>
+                    <h2 id="intro-h2" class="title--lg">Frontend Developer</h2>
+                    <p class="text--xl">
+                        Hello! I'm a Frontend Developer based in Saint Petersburg.
+                    </p>
+                    <p class="text--xl">
+                        Here you can learn a little about me and check out some of my work! If you want to see me on your team or order the development of your project, please contact me using the contacts at the bottom of the page.
+                    </p>
+                </div>
+                <button id="scroll-down" aria-label="Scroll down">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="48px"
+                        viewBox="0 0 24 24"
+                        width="48px"
+                    >
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                            stroke="var(--light-icon)"
+                        />
+                    </svg>
+                </button>
+            </section>
+            <section
+                id="about-me"
+                class="layout-section"
+                aria-labelledby="heading-aboutme"
+            >
+                <div class="container">
+                    <h2
+                        id="heading-aboutme"
+                        class="title--sm layout-section-title"
+                    >
+                        About me
+                    </h2>
+                    <div class="layout-grid-half">
+                        <div>
+                            <p class="text--lg">
+                                I studied computer science at ITMO University in St. Petersburg, Russia and received a master's degree from the University of Eastern Finland in Photonics and Optoinformatics.
+                            </p>
+                            <p class="text--lg">
+                                I've mastered programming languages like LabView and VisualBasic, driven by my university studies in applied physics to delve into self-learning of programming languages.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text--lg">
+                                While learning JavaScript, I gained practical experience
+                                by creating a Telegram bot for a major analytical equipment
+                                supplier.
+                            </p>
+                            <p class="text--lg">
+                                Constantly learning, I bring my ideas to life
+                                through new projects.
+                                Curious to know more? Check-out my
+                                <a href="#portfolio">portfolio</a> or
+                                <a href="#hire-me">hire me</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="portfolio"
+                class="layout-section"
+                aria-labelledby="heading-portfolio"
+            >
+                <div class="container">
+                    <h2
+                        id="heading-portfolio"
+                        class="title--sm layout-section-title"
+                    >
+                        Portfolio
+                    </h2>
+                    <div class="portfolio">
+                        <img
+                            src="assets/telegramBot.jpg"
+                            width="300"
+                            height="300"
+                            alt="Registrator | Telegram bot"
+                            class="portfolio-screenshot"
+                        />
+                        <div>
+                            <h3 class="title">Registrator | Telegram bot</h3>
+                            <p class="text">
+                                During my time at a company specializing in analytical
+                                equipment, I crafted a Telegram bot that elegantly
+                                simplified the client registration process for
+                                company events. This thoughtful addition not only
+                                enhanced the customer experience but also effectively
+                                trimmed the company's event-related expenses.
+                            </p>
+                            <a
+                                href="https://t.me/MelytecSPB_bot/"
+                                class="btn btn--line"
+                                target="_blank"
+                                >Visit</a
+                            >
+                        </div>
+                    </div>
+                    <div class="portfolio">
+                        <img
+                            src="assets/productHub.jpg"
+                            width="300"
+                            height="300"
+                            alt="ProductHub"
+                            class="portfolio-screenshot"
+                        />
+                        <div>
+                            <h3 class="title">ProductHub</h3>
+                            <p class="text">
+                                A React-based Single Page Application (SPA)
+                                designed for ordering products with delivery.
+                                This versatile solution is optimized for seamless
+                                performance on a wide range of popular devices.
+                            </p>
+                            <a
+                                href="https://producthub-app.netlify.app"
+                                class="btn btn--line"
+                                target="_blank"
+                                >Visit</a
+                            >
+                        </div>
+                    </div>
+                    <div class="portfolio">
+                        <img
+                            src="assets/myPlayground.jpg"
+                            width="300"
+                            height="300"
+                            alt="My Playground"
+                            class="portfolio-screenshot"
+                        />
+                        <div>
+                            <h3 class="title">Web App "My Playground"</h3>
+                            <p class="text">
+                                This TypeScript and React-based single-page
+                                application serves as a prototype for a dynamic
+                                news portal. It features user authorization, profile
+                                management, notifications, and more. It acts as a
+                                dynamic platform for exploring new technologies and
+                                skill development. Please note that the application
+                                is a work in progress, and the site's interface
+                                is undergoing a redesign.
+                            </p>
+                            <a
+                                href="https://my-playground-project.netlify.app/"
+                                class="btn btn--line"
+                                target="_blank"
+                                >Visit</a
+                            >
+                        </div>
+                    </div>
+                    <div class="portfolio">
+                        <img
+                            src="assets/mogoLanding2.jpg"
+                            width="300"
+                            height="300"
+                            alt="Sports tracker"
+                            class="portfolio-screenshot"
+                        />
+                        <div>
+                            <h3 class="title">Landing for the MoGo company</h3>
+                            <p class="text">
+                                Vibrant and visually appealing landing page with
+                                a responsive layout. This landing page was faithfully
+                                crafted to match the Figma design and incorporates
+                                smooth scrolling and interactive sliders for an
+                                engaging user experience.
+                            </p>
+                            <a
+                                href="https://landing-mogo-company.netlify.app/"
+                                class="btn btn--line"
+                                target="_blank"
+                                >Visit</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="experience"
+                class="layout-section"
+                aria-labelledby="heading-experience"
+            >
+                <div class="container">
+                    <h2
+                        id="heading-experience"
+                        class="title--sm layout-section-title"
+                    >
+                        Experience
+                    </h2>
+                    <ul class="tags">
+                        <li class="tag">JavaScript</li>
+                        <li class="tag">TypeScript</li>
+                        <li class="tag">React</li>
+                        <li class="tag">Redux</li>
+                        <li class="tag">HTML</li>
+                        <li class="tag">CSS</li>
+                        <li class="tag">Webpack</li>
+                        <li class="tag">SASS</li>
+                        <li class="tag">Jest</li>
+                        <li class="tag">Testing Library</li>
+                        <li class="tag">Node.js</li>
+                        <li class="tag">Vite</li>
+                        <li class="tag">Git</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section
+                id="hire-me"
+                class="layout-section"
+                aria-labelledby="heading-hireme"
+            >
+                <div class="container">
+                    <h2
+                        id="heading-hireme"
+                        class="title--sm layout-section-title"
+                    >
+                        Hire Me
+                    </h2>
+                    <div class="hire-form">
+                        <div>
+                            <address>
+                                <div class="hire-line">
+                                    <svg
+                                        width="30"
+                                        height="30"
+                                        viewBox="0 0 30 30"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M15 2.5C10.1625 2.5 6.25 6.4125 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 6.4125 19.8375 2.5 15 2.5ZM15 14.375C13.275 14.375 11.875 12.975 11.875 11.25C11.875 9.525 13.275 8.125 15 8.125C16.725 8.125 18.125 9.525 18.125 11.25C18.125 12.975 16.725 14.375 15 14.375Z"
+                                            fill="var(--light-icon)"
+                                        />
+                                    </svg>
+                                    <div>
+                                        <p class="text">Current location</p>
+                                        <p class="text--bold">
+                                            Saint Petersburg, Russia
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hire-line">
+                                    <svg
+                                        width="30"
+                                        height="30"
+                                        viewBox="0 0 30 30"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M25 5H5C3.625 5 2.5125 6.125 2.5125 7.5L2.5 22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM25 10L15 16.25L5 10V7.5L15 13.75L25 7.5V10Z"
+                                            fill="var(--light-icon)"
+                                        />
+                                    </svg>
+                                    <div>
+                                        <p class="text">Email</p>
+                                        <a
+                                            class="text--bold"
+                                            href="mailto:aleksandr.murashov@outlook.com"
+                                            >aleksandr.murashov@outlook.com</a
+                                        >
+                                    </div>
+                                </div>
+                            </address>
+                        </div>
+                        <form id="form" onsubmit="submitForm(event)">
+                            <div class="hire-form-element">
+                                <label for="hire-name" class="sr-only">
+                                    Your name
+                                </label>
+                                <input
+                                    id="hire-name"
+                                    name="name"
+                                    type="text"
+                                    autocomplete="name"
+                                    class="input"
+                                    placeholder="Your name"
+                                    required
+                                />
+                                <span class="text--sm form__error" data-for="name"></span>
+                            </div>
+                            <div class="hire-form-element">
+                                <label for="hire-email" class="sr-only">
+                                    Your email
+                                </label>
+                                <input
+                                    id="hire-email"
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    class="input"
+                                    placeholder="Your email"
+                                    required
+                                />
+                                <span class="text--sm form__error" data-for="email"></span>
+                            </div>
+                            <div class="hire-form-element">
+                                <label for="hire-message" class="sr-only">
+                                    Your message
+                                </label>
+                                <textarea
+                                    id="hire-message"
+                                    name="message"
+                                    class="input"
+                                    placeholder="Your message"
+                                    required
+                                ></textarea>
+                                <span class="text--sm form__error" data-for="message"></span>
+                            </div>
+                            <div class="hire-action">
+                                <span class="text--sm form__send-result"></span>
+                                <input
+                                    type="submit"
+                                    class="btn btn--raised form__btn"
+                                    value="Send"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="side">
+                        <img
+                            src="assets/logo.svg"
+                            alt="logo"
+                            width="45"
+                            height="43"
+                        />
+                        <div>
+                            <p class="text--bold footer-name">
+                                &copy; 2023 Aleksandr Murashov
+                            </p>
+                            <p class="footer-rights">
+                                <small class="text--sm"
+                                    >All rights reserved.</small
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="side">
+                        <p class="text--sm">@ZaprostoNeprosto on Social Media</p>
+                        <ul class="footer-social">
+                            <li>
+                                <a target="_blank" href="https://t.me/ZaprostoNeprosto">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="32"
+                                        height="32"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z    M17.562,8.161c-0.18,1.897-0.962,6.502-1.359,8.627c-0.168,0.9-0.5,1.201-0.82,1.23c-0.697,0.064-1.226-0.461-1.901-0.903   c-1.056-0.692-1.653-1.123-2.678-1.799c-1.185-0.781-0.417-1.21,0.258-1.911c0.177-0.184,3.247-2.977,3.307-3.23   c0.007-0.032,0.015-0.15-0.056-0.212s-0.174-0.041-0.248-0.024c-0.106,0.024-1.793,1.139-5.062,3.345   c-0.479,0.329-0.913,0.489-1.302,0.481c-0.428-0.009-1.252-0.242-1.865-0.442c-0.751-0.244-1.349-0.374-1.297-0.788   c0.027-0.216,0.324-0.437,0.892-0.663c3.498-1.524,5.831-2.529,6.998-3.015c3.333-1.386,4.025-1.627,4.477-1.635   C17.472,7.214,17.608,7.681,17.562,8.161z"
+                                            fill="var(--light-icon)"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://github.com/ZaprostoNeprosto">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="32"
+                                        height="32"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M12,0.296c-6.627,0-12,5.372-12,12c0,5.302,3.438,9.8,8.206,11.387   c0.6,0.111,0.82-0.26,0.82-0.577c0-0.286-0.011-1.231-0.016-2.234c-3.338,0.726-4.043-1.416-4.043-1.416   C4.421,18.069,3.635,17.7,3.635,17.7c-1.089-0.745,0.082-0.729,0.082-0.729c1.205,0.085,1.839,1.237,1.839,1.237   c1.07,1.834,2.807,1.304,3.492,0.997C9.156,18.429,9.467,17.9,9.81,17.6c-2.665-0.303-5.467-1.332-5.467-5.93   c0-1.31,0.469-2.381,1.237-3.221C5.455,8.146,5.044,6.926,5.696,5.273c0,0,1.008-0.322,3.301,1.23   C9.954,6.237,10.98,6.104,12,6.099c1.02,0.005,2.047,0.138,3.006,0.404c2.29-1.553,3.297-1.23,3.297-1.23   c0.653,1.653,0.242,2.873,0.118,3.176c0.769,0.84,1.235,1.911,1.235,3.221c0,4.609-2.807,5.624-5.479,5.921   c0.43,0.372,0.814,1.103,0.814,2.222c0,1.606-0.014,2.898-0.014,3.293c0,0.319,0.216,0.694,0.824,0.576   c4.766-1.589,8.2-6.085,8.2-11.385C24,5.669,18.627,0.296,12,0.296z"
+                                            fill="var(--light-icon)"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://linkedin/in/aleksandr-murashov">
+                                    <svg
+                                        width="32"
+                                        height="32"
+                                        viewBox="0 0 32 32"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM7.68101 13.252H11.307V24.1464H7.68101V13.252ZM11.5479 9.8818C11.5244 8.8136 10.7605 8 9.5201 8C8.27969 8 7.46875 8.8136 7.46875 9.8818C7.46875 10.9279 8.25572 11.7649 9.47304 11.7649H9.49621C10.7605 11.7649 11.5479 10.9279 11.5479 9.8818ZM20.2088 12.9961C22.5948 12.9961 24.3836 14.5535 24.3836 17.8998L24.3834 24.1464H20.7576V18.3178C20.7576 16.8538 20.2329 15.8548 18.9203 15.8548C17.9186 15.8548 17.3219 16.5283 17.0599 17.1788C16.964 17.4119 16.9404 17.7367 16.9404 18.0623V24.1467H13.3141C13.3141 24.1467 13.3619 14.2745 13.3141 13.2522H16.9404V14.7953C17.4217 14.0535 18.2836 12.9961 20.2088 12.9961Z"
+                                            fill="var(--light-icon)"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
