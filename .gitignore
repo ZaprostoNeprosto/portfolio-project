@@ -1,6 +1,6 @@
 node_modules
 dist
 .idea
-.firebase
+.firebaserc
 .prettierrc
 firebase.json
