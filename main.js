@@ -97,12 +97,11 @@
     }
 
     async function sendFormData(form, formBtn, formSendResult, formDataObject) {
-
         try {
             formBtn.value = 'Sending...';
             formBtn.disabled = true;
 
-            const response = await fetch('http://34.118.0.154:5500/send-email', {
+            const response = await fetch('https://zaprostoneprosto.online/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -112,6 +111,7 @@
 
             if (response.ok) {
                 formSendResult.textContent = 'Thank you for your message! I will get in touch with you as soon as possible.';
+                formSendResult.style.color = 'initial';
                 form.reset();
             } else if (response.status === 422) {
                 const errors = await response.json();
