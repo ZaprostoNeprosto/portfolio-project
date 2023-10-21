@@ -15,9 +15,20 @@
 
 @media (max-width: 37.5rem) {
     .layout-section {
+        padding-bottom: 50px;
+    }
+
+    .layout-section:first-child {
         padding-bottom: 100px;
     }
+
+
     .layout-grid-half {
         grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .layout-grid-half > div:first-child > p:last-child {
+        margin-bottom: 0;
     }
 }

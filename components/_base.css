@@ -56,6 +56,12 @@ select {
     color: var(--black);
 }
 
+@media (pointer: coarse) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
 @media (max-width: 37.5rem) {
     :root {
         --gap: 30px;

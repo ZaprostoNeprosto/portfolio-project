@@ -27,3 +27,9 @@
         translate: 0 -15px;
     }
 }
+
+@media (max-width: 37.5rem) {
+    #scroll-down {
+        bottom: 25px;
+    }
+}
