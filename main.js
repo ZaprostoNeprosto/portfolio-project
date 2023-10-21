@@ -5,13 +5,29 @@
     });
 
     document.querySelector("#toggle-theme").addEventListener("click", () => {
-        document.documentElement.classList.toggle("light-theme");
+        const isLightTheme = document.documentElement.classList.contains("light-theme");
+
+        if (isLightTheme) {
+            document.documentElement.classList.remove("light-theme");
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.documentElement.classList.add("light-theme");
+            localStorage.setItem("theme", "light");
+        }
     });
 
-    const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-
-    if (prefersLight) {
-        document.documentElement.classList.add("light-theme");
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        if (savedTheme === "light") {
+            document.documentElement.classList.add("light-theme");
+        } else {
+            document.documentElement.classList.remove("light-theme");
+        }
+    } else {
+        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (prefersLight) {
+            document.documentElement.classList.add("light-theme");
+        }
     }
 
     document.getElementById('form').addEventListener('submit', function(event) {
